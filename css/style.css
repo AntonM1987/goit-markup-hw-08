@@ -35,17 +35,18 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
-  padding-top: 25px;
 }
 .logo-web {
   color: var(--selection-color);
 }
 
 /* Основная навигация */
-.nav {
-  width: 1600px;
-  margin-left: 200px;
-  margin-right: 200px;
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  display: flex;
 }
 .main-nav .link {
   color: var(--title-text-color);
@@ -55,7 +56,6 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
   text-decoration: none;
-  outline: 3px solid black;
 }
 
 .main-nav .link:hover,
@@ -68,14 +68,13 @@ body {
 
 .main-nav {
   display: flex;
+  margin: 0px;
 }
 /* Контакты*/
 
 .contacts-list {
-  display: inline-block;
-  width: 1200px;
-
   display: flex;
+  margin: 0px;
 }
 
 .contacts-link {
@@ -93,14 +92,12 @@ body {
   color: var(--selection-color);
 }
 /* Герой */
-.main-header {
-  display: flex;
-}
 
-.hero {
-  width: 1600px;
+.hero-container {
+  width: 1230px;
   height: 600px;
   padding-top: 200px;
+  padding-bottom: 154px;
   text-align: center;
 }
 .hero-header {
@@ -129,25 +126,38 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   display: inline-block;
-  padding: 16px 24px;
+  padding: 14px 32px;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
+  border: 1px solid transparent;
   text-decoration: none;
   text-align: center;
 }
 /*Характеристики*/
+
+.attributes-section {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .attributes {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
   margin: 0;
+  color: var(--primary-white-color);
 }
 .attr-list {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
-
+.attr-list .item {
+  width: 278px;
+  margin-right: 30px;
+}
 .attr-list .item .pic {
   background: var(--background-color);
   padding: 25px 105px;
@@ -165,15 +175,30 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
+
+/*Работы*/
+
+.work-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .work {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 95px;
+  margin-bottom: 0px;
 }
-/*Работы*/
 .work-list {
   display: flex;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+.work-list .item {
+  margin-right: 30px;
 }
 
 .work-list .header {
@@ -189,6 +214,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 27px;
+  margin-bottom: 94px;
 }
 
 /* Команда*/
@@ -197,10 +223,25 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.team-container {
+  padding-top: 94px;
+  width: 1230px;
+  height: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: var(--background-color);
 }
 .team-list {
   display: flex;
-  flex-direction: row;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team-list .worker {
+  margin-bottom: 94px;
 }
 .team-list .header {
   font-weight: 500;
@@ -214,11 +255,6 @@ body {
   text-align: center;
 }
 
-.team-section {
-  background: var(--background-color);
-  width: 1600px;
-  height: 700px;
-}
 .worker {
   width: 278px;
   height: 422px;
@@ -227,12 +263,23 @@ body {
 }
 
 /*Клиенты*/
-.clients-section {
+
+.clients-container {
+  width: 1230px;
+  padding-bottom: 94px;
   text-align: center;
 }
 .clients-list {
   display: flex;
-  flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .clients-list .item {
@@ -243,13 +290,18 @@ body {
   height: 90px;
   margin-right: 30px;
 }
+.clients-list .item .pic:hover,
+.clients-list .item .pic:focus {
+  color: var(--selection-color);
+}
 
 /*Футер*/
 
-.footer {
+.footer-container {
   background: #2f303a;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .footer-logo {
   color: var(--primary-white-color);
