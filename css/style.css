@@ -218,6 +218,10 @@ body {
 }
 
 /* Команда*/
+.team-section {
+  background: var(--background-color);
+}
+
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -232,7 +236,6 @@ body {
   height: 700px;
   padding-left: 15px;
   padding-right: 15px;
-  background: var(--background-color);
 }
 .team-list {
   display: flex;
@@ -296,9 +299,11 @@ body {
 }
 
 /*Футер*/
+.footer {
+  background: #2f303a;
+}
 
 .footer-container {
-  background: #2f303a;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
