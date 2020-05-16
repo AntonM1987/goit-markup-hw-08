@@ -341,7 +341,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  justify-content: space-between;
 }
 .footer-logo {
   color: var(--primary-white-color);
@@ -371,6 +370,7 @@ body {
 }
 .sign {
   display: flex;
+  margin-top: 55px;
 }
 .join {
   margin-top: 55px;
