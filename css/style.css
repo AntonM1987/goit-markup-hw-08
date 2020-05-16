@@ -330,65 +330,6 @@ body {
   color: var(--selection-color);
 }
 
-/*Футер*/
-.footer {
-  background: #2f303a;
-}
-
-.footer-container {
-  width: 1230px;
-  height: 250px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
-.footer-logo {
-  color: var(--primary-white-color);
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-decoration: none;
-}
-.address-div {
-  margin-top: 50px;
-}
-.address {
-  color: var(--primary-white-color);
-  margin-top: 10px;
-}
-
-.footer-contacts-link {
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 10px;
-  display: block;
-}
-.icons {
-  display: flex;
-}
-.sign {
-  display: flex;
-  margin-top: 55px;
-}
-.join {
-  margin-top: 55px;
-}
-.action {
-  color: var(--primary-white-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.copyright {
-  color: var(--primary-text-color);
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  margin-top: auto;
-}
 /*Портфолио*/
 
 .section-container {
@@ -465,4 +406,75 @@ body {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+}
+/*Футер*/
+.footer {
+  background: #2f303a;
+}
+.footer-container {
+  width: 1230px;
+  height: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer-logo {
+  color: var(--primary-white-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.address {
+  color: var(--primary-white-color);
+  margin-top: 10px;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  display: block;
+}
+.action {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.madeby {
+  color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  width: 1230px;
+  text-align: center;
+}
+.logo-address {
+  margin-top: 50px;
+}
+.social-links {
+  display: flex;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.joinus {
+  margin-top: 56px;
+}
+.email {
+  color: rgba(255, 255, 255, 0.6);
+}
+.signin {
+  margin-top: 56px;
+}
+.button-div {
+  margin-top: 93px;
 }
