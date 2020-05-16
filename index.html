@@ -18,14 +18,14 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav>
+        <nav class="nav">
           <a class="logo" href="./index.html">
             <span class="logo-web">Web</span>Studio
           </a>
           <ul class="main-nav">
-            <li><a href="./index.html" class="link current"> Студия</a></li>
-            <li><a href="./portfolio.html" class="link"> Портфолио</a></li>
-            <li><a href="" class="link"> Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link current"> Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link"> Портфолио</a></li>
+            <li class="item"><a href="" class="link"> Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts-list">
@@ -35,7 +35,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="contacts">
             <a href="tel:+380961111111" class="contacts-link">
               <img src="./images/smartphone.svg" alt="Телефон" />+38 096 111 11
               11
@@ -148,7 +148,7 @@
               <h3 class="header">Marta Stewart</h3>
               <p class="text">Frontend Developer</p>
               <img src="./images/team/marta.png" alt="Marta" />
-              <ul>
+              <ul class="social-network">
                 <li>
                   <a
                     href="http://instagram.com"
@@ -177,7 +177,7 @@
               <h3 class="header">Robert Jakis</h3>
               <p class="text">Marketing</p>
               <img src="./images/team/robert.png" alt="Robert" />
-              <ul>
+              <ul class="social-network">
                 <li>
                   <a
                     href="http://instagram.com"
@@ -206,7 +206,7 @@
               <h3 class="header">Martin Doe</h3>
               <p class="text">UI Designer</p>
               <img src="./images/team/martin.png" alt="Martin" />
-              <ul>
+              <ul class="social-network">
                 <li>
                   <a
                     href="http://instagram.com"
@@ -274,10 +274,10 @@
     </main>
     <footer class="footer">
       <div class="footer-container">
+        <div class="address-div">
           <a class="footer-logo" href="./index.html">
             <span class="logo-web">Web</span>Studio
           </a>
-          <div>
             <address class="address">
               г. Киев, пр-т Леси Украинки, 26
             </address>
@@ -288,34 +288,32 @@
               >+38 096 111 11 11</a
             >
           </div>
-          <b class="action">Присоединяйтесь</b>
-          <ul>
-            <li>
-              <a href="http://instagram.com" aria-label="Ссылка на Instagram"
-                >Instagram
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com" aria-label="Ссылка на Twitter"
-                >Twitter
-              </a>
-            </li>
-            <li>
-              <a href="http://facebook.com" aria-label="Ссылка на Facebook"
-                >Facebook
-              </a>
-            </li>
-            <li>
-              <a href="http://linkedin.com" aria-label="Ссылка на Linkedin"
-                >Linkedin
-              </a>
-            </li>
-          </ul>
-          <div>
+          <div class="join">
+            <b class="action">Присоединяйтесь</b>
+            <ul class="icons">
+              <li>
+                <a href="http://instagram.com" aria-label="Ссылка на Instagram">Instagram
+                </a>
+              </li>
+              <li>
+                <a href="http://twitter.com" aria-label="Ссылка на Twitter">Twitter
+                </a>
+              </li>
+              <li>
+                <a href="http://facebook.com" aria-label="Ссылка на Facebook">Facebook
+                </a>
+              </li>
+              <li>
+                <a href="http://linkedin.com" aria-label="Ссылка на Linkedin">Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sign">
             <b class="action">Подпишитесь на рассылку</b>
             <a href="" class="button">Подписаться</a>
           </div>
-          <p class="madeby">2020 | Developed by GoIT Students</p>
+          <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
   </body>
