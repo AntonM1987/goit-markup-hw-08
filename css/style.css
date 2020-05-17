@@ -37,6 +37,7 @@ body {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 /* Логотип */
@@ -171,7 +172,9 @@ body {
   text-align: center;
 }
 /*Характеристики*/
-
+.attr-container {
+  padding-top: 94px;
+}
 .attr-list {
   display: flex;
   padding: 0;
@@ -206,6 +209,7 @@ body {
 
 .work-container {
   width: 1230px;
+  padding-top: 94px;
 }
 .work-list {
   display: flex;
@@ -243,6 +247,7 @@ body {
   height: 700px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
   background: var(--background-color);
 }
 .team-list {
@@ -281,7 +286,8 @@ body {
 
 .clients-container {
   width: 1230px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
+  padding-top: 94px;
   text-align: center;
 }
 .clients-list {
