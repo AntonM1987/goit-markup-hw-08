@@ -227,6 +227,9 @@ body {
   padding: 27px;
   margin: 0;
 }
+.item .card {
+  display: block;
+}
 
 /* Команда*/
 
@@ -369,6 +372,7 @@ body {
   letter-spacing: 0.03em;
 }
 .pic {
+  width: 370px;
   display: block;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
