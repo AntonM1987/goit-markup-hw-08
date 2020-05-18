@@ -25,11 +25,6 @@ body {
 
   background-color: var(--primary-white-color);
 }
-.section {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .section-title {
   font-size: 36px;
@@ -64,9 +59,13 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  padding-top: 94px;
+  margin: 0 auto;
+}
+.head {
   display: flex;
   align-items: center;
+  padding-top: 0;
 }
 .main-nav .link {
   text-decoration: none;
@@ -101,9 +100,9 @@ body {
 /* Контакты*/
 
 .contacts-list {
-  margin: auto;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
   display: flex;
   padding-left: 0;
 }
@@ -127,12 +126,9 @@ body {
 }
 /* Герой */
 
-.hero-container {
-  width: 1230px;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 154px;
+.hero {
   text-align: center;
+  background-image: ;
 }
 .hero-header {
   margin-top: 0;
@@ -172,9 +168,7 @@ body {
   text-align: center;
 }
 /*Характеристики*/
-.attr-container {
-  padding-top: 94px;
-}
+
 .attr-list {
   display: flex;
   padding: 0;
@@ -207,10 +201,6 @@ body {
 
 /*Работы*/
 
-.work-container {
-  width: 1230px;
-  padding-top: 94px;
-}
 .work-list {
   display: flex;
   padding: 0;
@@ -220,7 +210,9 @@ body {
 .work-list .item {
   margin-right: 30px;
 }
-
+.work-list .item:last-child {
+  margin-right: 0;
+}
 .work-list .header {
   background: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
@@ -243,12 +235,8 @@ body {
 
 .team-container {
   padding-top: 94px;
-  width: 1230px;
   height: 700px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 94px;
-  background: var(--background-color);
 }
 .team-list {
   display: flex;
@@ -264,11 +252,16 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin: 0;
+  padding-top: 30px;
 }
 .team-list .text {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .worker {
@@ -285,7 +278,6 @@ body {
 /*Клиенты*/
 
 .clients-container {
-  width: 1230px;
   padding-bottom: 50px;
   padding-top: 94px;
   text-align: center;
@@ -311,6 +303,7 @@ body {
 .clients-list .item:last-child {
   margin-right: 0;
 }
+
 /*Портфолио*/
 
 .section-container {
@@ -389,13 +382,10 @@ body {
   letter-spacing: 0.03em;
 }
 /*Футер*/
-.footer {
+.footer-section {
   background: #2f303a;
 }
-.footer-container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+.footer {
   padding-top: 56px;
   display: flex;
   justify-content: space-between;
@@ -433,7 +423,6 @@ body {
   margin: 0;
 }
 .copyright {
-  width: 1230px;
   text-align: center;
 }
 .social-links {
