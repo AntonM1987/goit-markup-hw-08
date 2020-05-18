@@ -356,12 +356,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .link .meaning {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 .link .text {
   font-size: 18px;
@@ -374,9 +376,7 @@ body {
   border-top-left-radius: 5px;
 }
 .card-content {
-  background: #ffffff;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 20px 24px;
