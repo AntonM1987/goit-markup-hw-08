@@ -56,17 +56,16 @@ body {
   color: var(--selection-color);
 }
 /* Основная навигация */
-.main-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .head {
   display: flex;
   align-items: center;
-  padding-top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .main-nav .link {
   text-decoration: none;
+  padding: 20px 0px;
 }
 .main-nav .item {
   color: var(--title-text-color);
