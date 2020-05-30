@@ -119,6 +119,7 @@ body {
 }
 .icon-contact {
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 .contacts-link:hover > .icon-contact,
 .contacts-link:focus > .icon-contact {
