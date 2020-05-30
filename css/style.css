@@ -419,7 +419,7 @@ body {
   background: var(--background-color);
   padding: 12px 24px;
   border-radius: 4px;
-
+  border: transparent;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
