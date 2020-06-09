@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -60,7 +60,47 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <a href="" class="button">Заказать услугу</a>
+            <button class="button" data-open-modal>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-backdrop>
+              <form class="modal-window js-speaker-form">
+                <div class="close">
+                  <h2 class="modal-header">
+                    Оставьте свои данные, мы вам перезвоним
+                  </h2>
+                  <div class="form-field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name" autofocus />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" />
+                  </div>
+                  <div class="form-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea
+                      class="comment"
+                      name="comment"
+                      id="comment"
+                    ></textarea>
+                  </div>
+                  <div class="form-field checkbox">
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy"
+                      >Согласен с рассылкой и принимаю
+                      <a class="terms" href="">Условия договора</a></label
+                    >
+                  </div>
+                  <button class="close-button" data-close-modal>Закрыть</button>
+                  <button class="button modal">Отправить</button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </div>
@@ -406,7 +446,7 @@
             <span class="logo-web">Web</span>Studio
           </a>
           <address class="address">
-            г. Киев, пр-т Леси Украинки, 26
+            г. Киев, пр-т Леси Украинки,26
           </address>
           <a href="mailto:info@devstudio.com" class="footer-link"
             >info@devstudio.com
@@ -463,21 +503,60 @@
           </ul>
         </div>
         <div class="signin">
+          <form action="">
           <b class="action">Подпишитесь на рассылку</b>
-          <p class="email">E-mail</p>
+          <label for="mail"></label>
+          <input type="email" name="mail" id="mail" placeholder="  E-mail" />
         </div>
         <div class="button-div">
-          <a href="" class="button subscribe"
+          <button class="button subscribe"
             >Подписаться
             <svg class="icon-subscribe">
               <use href="./images/svg/sprite.svg#icon-send"></use>
             </svg>
+          </button>
           </a>
         </div>
+        </form>
       </div>
       <div class="copyright">
         <p class="madeby">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
