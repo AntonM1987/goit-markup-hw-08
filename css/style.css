@@ -277,6 +277,7 @@ textarea {
   border: 1px solid transparent;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 /*Характеристики*/
 .attributes {
@@ -737,6 +738,5 @@ textarea {
   text-align: center;
 }
 .button-div {
-  display: flex;
-  align-items: center;
+  margin-top: 34px;
 }
