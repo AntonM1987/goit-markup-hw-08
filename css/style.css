@@ -189,9 +189,14 @@ body {
   width: 528px;
   height: 581px;
 }
+
+.form-content:hover {
+  transform: scale(1.2);
+}
 .form-content {
   padding: 40px;
   background-color: var(--primary-white-color);
+  transition: 1000ms;
 }
 .form-field {
   margin: 0;
