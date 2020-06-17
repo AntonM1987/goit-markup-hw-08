@@ -67,42 +67,45 @@
                   <h2 class="modal-header">
                     Оставьте свои данные, мы вам перезвоним
                   </h2>
+                  <label class="form-field">
+                    <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                     <span class="form-label">Имя</span>
+                    <svg class="form-icon">
+                      <use href="./images/svg/modal.svg#icon-person"></use>
+                    </svg>
+                    </label>
+                  <label class="form-field">
+                    <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                    <span class="form-label">Телефон</span>
+                    <svg class="form-icon">
+                      <use href="./images/svg/modal.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                    <label class="form-field">
+                      <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                      <span class="form-label">Почта</span>
+                      <svg class="form-icon">
+                        <use href="./images/svg/modal.svg#icon-email"></use>
+                      </svg>
+                    </label>
                   <div class="form-field">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name" autofocus />
-                  </div>
-
-                  <div class="form-field">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" />
-                  </div>
-
-                  <div class="form-field">
-                    <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" />
-                  </div>
-                  <div class="form-field">
-                    <label for="comment">Комментарий</label>
                     <textarea
                       class="comment"
                       name="comment"
                       id="comment"
                     ></textarea>
+                    <label for="comment" class="form-textarea" >Комментарий</label>
                   </div>
-                  <div class="form-field checkbox">
-                    <input class="custom-checkbox" type="checkbox" name="policy" id="policy" />
-                    <label for="policy"
-                      >Согласен с рассылкой и принимаю
-                      <a class="terms" href="">Условия договора</a></label
-                    >
-                  </div>
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox" name="policy" value="css" placeholder=" " />
+                      <span class="checkbox-icon"></span>
+                      Соглашаюсь с рассылкой и принимаю
+                      <a class="terms" href="">Условия договора</a>
+                    </label>
                   <button class="close-button" data-close-modal>
-                    <use>
-                      <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11 1.108L9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108z"
-                          fill="#000" /></svg>
-                    </use>
+                      <svg class="close" width="11px" height="11px">
+                        <use href="./images/svg/modal.svg#icon-close"></use>
+                      </svg>
                   </button>
                   <button class="button modal">Отправить</button>
                 </div>
@@ -525,9 +528,6 @@
           </a>
         </div>
         </form>
-      </div>
-      <div class="copyright">
-        <p class="madeby">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
     <script>
