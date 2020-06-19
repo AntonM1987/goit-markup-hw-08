@@ -7,6 +7,9 @@ li {
   --title-text-color: #212121;
   --primary-white-color: #ffffff;
   --background-color: #f5f4fa;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 html {
   box-sizing: border-box;
@@ -69,7 +72,7 @@ body {
   padding: 32px 0px;
   color: var(--title-text-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 .main-nav .item {
   color: var(--title-text-color);
@@ -133,12 +136,12 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 .icon-contact {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic);
 }
 .contacts-link:hover > .icon-contact,
 .contacts-link:focus > .icon-contact {
@@ -180,7 +183,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic);
 }
 .modal-window {
   position: absolute;
@@ -235,7 +238,7 @@ body {
   transform: translateY(-40px);
   left: 16px;
   font-size: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--cubic);
 }
 .form-input:focus ~ .form-icon {
   fill: var(--selection-color);
@@ -251,7 +254,7 @@ body {
   transform: translateY(-30px);
   left: 16px;
   font-size: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--cubic);
 }
 .comment {
   resize: none;
@@ -318,8 +321,7 @@ body {
   border-radius: 100%;
   background-color: var(--primary-white-color);
   border: none;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow);
 }
 .close:hover,
 .close:focus {
@@ -482,8 +484,7 @@ body {
   height: 422px;
   background-color: var(--primary-white-color);
   margin-right: 30px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow);
   border-radius: 4px;
 }
 .worker:last-child {
@@ -501,7 +502,7 @@ body {
   display: inline-block;
   align-items: center;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic);
 }
 
 .item-link:hover,
@@ -522,7 +523,7 @@ body {
   justify-content: center;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 
 /*Клиенты*/
@@ -557,7 +558,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--cubic);
 }
 .clients-list .item {
   margin-right: 30px;
@@ -568,7 +569,7 @@ body {
 .icon-client {
   fill: #afb1b8;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic);
 }
 
 /*Портфолио*/
@@ -618,8 +619,7 @@ body {
   font-weight: 500;
   line-height: 1.6;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 .filter .item:hover,
 .filter .item:focus {
@@ -667,7 +667,7 @@ body {
   top: 0;
   padding: 63px 24px;
   margin: 0;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms var(--cubic);
 
   width: 100%;
   height: 100%;
@@ -683,7 +683,7 @@ body {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
   background-color: rgba(33, 150, 243, 0.9);
 }
 .pf-link:hover .overlay,
@@ -740,7 +740,7 @@ body {
   border-radius: 80%;
   margin-right: 10px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .footer-icon:hover,
 .footer-icon:focus {
