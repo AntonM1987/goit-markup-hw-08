@@ -1,0 +1,13 @@
+.logo {
+  color: $title-text;
+
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &-web {
+    color: $selection;
+  }
+}
