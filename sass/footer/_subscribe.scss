@@ -1,3 +1,17 @@
+.signin {
+  margin-right: 12px;
+  input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #2f303a;
+    color: $primary-white;
+    padding-left: 20px;
+  }
+}
 .action {
   color: $primary-white;
   font-weight: 700;
@@ -7,32 +21,19 @@
   margin-bottom: 20px;
   display: block;
 }
-.signin {
-  margin-right: 12px;
-}
-.signin input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background: #2f303a;
-  color: $primary-white;
-}
+
 .email {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 0;
 }
-
+.button-div {
+  margin-top: 34px;
+}
 .subscribe {
   display: inline-flex;
   text-align: center;
   padding-left: 29px;
   padding-right: 20px;
-}
-.button-div {
-  margin-top: 34px;
 }
 .icon-subscribe {
   width: 24px;

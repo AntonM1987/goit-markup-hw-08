@@ -1,21 +1,21 @@
+.clients {
+  padding-bottom: 94px;
+  text-align: center;
+}
 .clients-list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+
+  .item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
-.client-link:hover > .icon-client,
-.client-link:focus > .icon-client {
-  fill: $selection;
-  color: $selection;
-}
-.client-link:hover,
-.client-link:focus {
-  border-color: $selection;
-  fill: $selection;
-  color: $selection;
-}
-.client-link {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,15 +25,22 @@
   border-radius: 4px;
 
   transition: border-color $transition;
+  &:hover,
+  &:focus {
+    border-color: $selection;
+    fill: $selection;
+    color: $selection;
+  }
 }
-.clients-list .item {
-  margin-right: 30px;
-}
-.clients-list .item:last-child {
-  margin-right: 0;
-}
-.icon-client {
+
+.clients-icon {
   fill: #afb1b8;
 
   transition: fill $transition;
+
+  .clients-link:hover > &,
+  .clients-link:focus > & {
+    fill: $selection;
+    color: $selection;
+  }
 }

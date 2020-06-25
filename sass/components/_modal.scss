@@ -1,5 +1,3 @@
-/*Модальное окно*/
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -24,72 +22,59 @@
   background-color: $primary-white;
   transition: 1000ms;
 }
-.form-field {
+.form {
   position: relative;
   margin: 0;
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   text-align: left;
+
+  &-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    padding-left: 42px;
+  }
+  &-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    color: $primary-text;
+  }
+  &-textarea {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    color: $primary-text;
+  }
+  &-comment {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+  }
+  &-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .form-input:focus ~ & {
+      fill: $selection;
+    }
+  }
 }
-.form-input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 12px 20px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  padding-left: 42px;
-}
-.form-label {
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%);
-  color: $primary-text;
-}
-.form-icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  color: $selection;
-  transform: translateY(-40px);
-  left: 16px;
-  font-size: 12px;
-  transition: $transition;
-}
-.form-input:focus ~ .form-icon {
-  fill: $selection;
-}
-.form-textarea {
-  position: absolute;
-  left: 16px;
-  top: 12px;
-  color: $primary-text;
-}
-.comment:focus + .form-textarea {
-  color: $selection;
-  transform: translateY(-30px);
-  left: 16px;
-  font-size: 12px;
-  transition: $transition;
-}
-.comment {
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-}
-.checkbox-label {
+.checkbox {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7px;
@@ -99,26 +84,50 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  &-input {
+    -webkit-appearance: none;
+    display: inline-block;
+  }
+  &-icon {
+    border: 1px solid $title-text;
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+
+    .checkbox-input:checked + & {
+      background-image: url(../images/svg/iconcheck.svg);
+      background-color: $selection;
+      background-size: contain;
+      background-origin: content-box;
+      border: transparent;
+    }
+  }
+  &-terms {
+    color: $selection;
+    margin-left: 4px;
+  }
 }
-.checkbox {
-  -webkit-appearance: none;
-  display: inline-block;
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: $selection;
+  transform: translateY(-40px);
+  left: 16px;
+  font-size: 12px;
+  transition: $transition;
 }
-.checkbox-icon {
-  border: 1px solid $title-text;
-  border-radius: 2px;
-  margin-right: 8px;
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
+
+.comment:focus + .form-textarea {
+  color: $selection;
+  transform: translateY(-30px);
+  left: 16px;
+  font-size: 12px;
+  transition: $transition;
 }
-.checkbox:checked + .checkbox-icon {
-  background-image: url(../images/svg/iconcheck.svg);
-  background-color: $selection;
-  background-size: contain;
-  background-origin: content-box;
-  border: transparent;
-}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -132,10 +141,7 @@
   margin: 0;
   margin-bottom: 30px;
 }
-.terms {
-  color: $selection;
-  margin-left: 4px;
-}
+
 .close-button {
   position: absolute;
 

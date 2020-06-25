@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Web Studio</title>
   </head>
-
   <body>
     <header class="main-header">
-      <div class="head">
+      <div class="container head">
         <a class="logo" href="./index.html">
           <span class="logo-web">Web</span>Studio
         </a>
-        <nav class="main-nav">
-          <ul class="nav">
+        <nav class="nav">
+          <ul class="main-nav">
             <li class="item">
               <a href="./index.html" class="link current"> Студия</a>
             </li>
@@ -29,7 +28,7 @@
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contacts-item">
+          <li class="contacts-list">
             <a href="mailto:info@devstudio.com" class="contacts-link">
               <svg class="contacts-icon" width="16px" height="11px">
                 <use href="./images/svg/sprite.svg#icon-envelope"></use>
@@ -37,7 +36,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-item">
+          <li class="contacts-list">
             <a href="tel:+380961111111" class="contacts-link"
               ><svg class="contacts-icon" width="10px" height="15px">
                 <use href="./images/svg/sprite.svg#icon-mobile"></use>
@@ -56,65 +55,61 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button class="button" data-open-modal>Заказать услугу</button>
-            <div class="backdrop is-hidden" data-backdrop>
-              <form class="modal-window js-speaker-form">
-                <div class="form-content">
-                  <h2 class="modal-header">
-                    Оставьте свои данные, мы вам перезвоним
-                  </h2>
-                  <label class="form-field">
-                    <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                     <span class="form-label">Имя</span>
-                    <svg class="form-icon">
-                      <use href="./images/svg/modal.svg#icon-person"></use>
-                    </svg>
-                    </label>
-                  <label class="form-field">
-                    <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                    <span class="form-label">Телефон</span>
-                    <svg class="form-icon">
-                      <use href="./images/svg/modal.svg#icon-phone"></use>
-                    </svg>
-                  </label>
-                    <label class="form-field">
-                      <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                      <span class="form-label">Почта</span>
-                      <svg class="form-icon">
-                        <use href="./images/svg/modal.svg#icon-email"></use>
-                      </svg>
-                    </label>
-                  <div class="form-field">
-                    <textarea
-                      class="comment"
-                      name="comment"
-                      id="comment"
-                    ></textarea>
-                    <label for="comment" class="form-textarea" >Комментарий</label>
+                 <div class="backdrop is-hidden" data-backdrop>
+                    <form class="modal-window js-speaker-form">
+                        <div class="form-content">
+                          <h2 class="modal-header">
+                            Оставьте свои данные, мы вам перезвоним
+                           </h2>
+                              <label class="form">
+                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                                <span class="form-label">Имя</span>
+                                <svg class="form-icon">
+                                  <use href="./images/svg/modal.svg#icon-person"></use>
+                                </svg>
+                              </label>
+                              <label class="form">
+                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                                <span class="form-label">Телефон</span>
+                                <svg class="form-icon">
+                                  <use href="./images/svg/modal.svg#icon-phone"></use>
+                                </svg>
+                              </label>
+                              <label class="form">
+                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
+                                <span class="form-label">Почта</span>
+                                <svg class="form-icon">
+                                  <use href="./images/svg/modal.svg#icon-email"></use>
+                                </svg>
+                              </label>
+                              <div class="form">
+                                <textarea class="form-comment" name="comment" id="comment"></textarea>
+                                <label for="comment" class="form-textarea">Комментарий</label>
+                              </div>
+                              <label class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="policy" value="css" placeholder=" " />
+                                <span class="checkbox-icon"></span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="checkbox-terms" href="">Условия договора</a>
+                              </label>
+                              <button class="close-button" data-close-modal>
+                                <svg class="close" width="11px" height="11px">
+                       <use href="./images/svg/modal.svg#icon-close"></use>
+                       </svg>
+                       </button>
+                      <button class="button modal">Отправить</button>
                   </div>
-                    <label class="checkbox-label">
-                      <input class="checkbox" type="checkbox" name="policy" value="css" placeholder=" " />
-                      <span class="checkbox-icon"></span>
-                      Соглашаюсь с рассылкой и принимаю
-                      <a class="terms" href="">Условия договора</a>
-                    </label>
-                  <button class="close-button" data-close-modal>
-                      <svg class="close" width="11px" height="11px">
-                        <use href="./images/svg/modal.svg#icon-close"></use>
-                      </svg>
-                  </button>
-                  <button class="button modal">Отправить</button>
-                </div>
-              </form>
-            </div>
+               </form>
+           </div>
+            <button class="button" data-open-modal>Заказать услугу</button>
           </div>
         </section>
       </div>
       <section class="section">
-        <div class="container">
+        <div class="container attributes">
           <h2 class="section-title visually-hidden">Характеристики</h2>
           <ul class="attr-list">
-            <li class="attr-item">
+            <li class="item">
               <div class="attr-div">
                 <svg class="icon-attribute">
                   <use href="./images/svg/sprite.svg#icon-antenna"></use>
@@ -126,7 +121,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="attr-item">
+            <li class="item">
               <div class="attr-div">
                 <svg class="icon-attribute">
                   <use href="./images/svg/sprite.svg#icon-clock"></use>
@@ -138,7 +133,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="attr-item">
+            <li class="item">
               <div class="attr-div">
                 <svg class="icon-attribute">
                   <use href="./images/svg/sprite.svg#icon-diagram"></use>
@@ -150,7 +145,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="attr-item">
+            <li class="item">
               <div class="attr-div">
                 <svg class="icon-attribute">
                   <use href="./images/svg/sprite.svg#icon-astronaut"></use>
@@ -400,43 +395,43 @@
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="44px" height="50px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="44px" height="50px">
                   <use href="./images/svg/sprite.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="40px" height="52px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="40px" height="52px">
                   <use href="./images/svg/sprite.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="41px" height="42px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="41px" height="42px">
                   <use href="./images/svg/sprite.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="80px" height="42px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="80px" height="42px">
                   <use href="./images/svg/sprite.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="59px" height="47px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="59px" height="47px">
                   <use href="./images/svg/sprite.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="client-link" href="">
-                <svg class="icon-client" width="88px" height="46px">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="88px" height="46px">
                   <use href="./images/svg/sprite.svg#icon-logo6"></use>
                 </svg>
               </a>
@@ -526,6 +521,7 @@
         </form>
       </div>
     </footer>
+
     <script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),

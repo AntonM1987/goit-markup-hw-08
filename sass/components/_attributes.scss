@@ -1,19 +1,38 @@
+.attributes {
+  padding-bottom: 0;
+}
 .attr-list {
   display: flex;
   padding: 0;
   margin: 0;
-}
-.attr-list .header {
-  text-transform: uppercase;
-}
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+  .header {
+    text-transform: uppercase;
+  }
+  .item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
 
+    .header {
+      color: $title-text;
+
+      margin-bottom: 0;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.15;
+    }
+    .text {
+      color: $primary-text;
+
+      margin-bottom: 0;
+
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
+}
 .icon-attribute {
   width: 70px;
   height: 70px;
@@ -25,27 +44,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.attr-list .attr-item .header {
-  color: $title-text;
-
-  margin-bottom: 0;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-}
-.attr-list .attr-item .text {
-  color: $primary-text;
-
-  margin-bottom: 0;
-
-  font-size: 14px;
-  line-height: 1.7;
-}
-.attr-list .attr-item {
-  margin-right: 30px;
-}
-.attr-list .attr-item:last-child {
-  margin-right: 0;
 }

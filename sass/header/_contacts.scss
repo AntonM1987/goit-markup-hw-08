@@ -1,0 +1,39 @@
+.contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: flex;
+  padding-left: 0;
+
+  &-list + &-list {
+    margin-left: 50px;
+  }
+
+  &-icon {
+    fill: $primary-text;
+    margin-right: 10px;
+    transition: fill $transition;
+  }
+}
+
+.contacts-link:hover > .contacts-icon,
+.contacts-link:focus > .contacts-icon {
+  color: $selection;
+  fill: $selection;
+}
+.contacts-link {
+  color: $primary-text;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $selection;
+  }
+}
