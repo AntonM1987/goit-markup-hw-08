@@ -7,28 +7,27 @@
   padding-left: 0;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.footer-icon {
+  background-color: #44454e;
+  width: 44px;
+  border-radius: 80%;
+  margin-right: 10px;
 
-  .footer-icon {
-    background-color: #44454e;
-    width: 44px;
-    border-radius: 80%;
-    margin-right: 10px;
+  transition: background-color $transition;
 
-    transition: background-color $transition;
-
-    &:hover,
-    &:focus {
-      background-color: $selection;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-    .link {
-      display: flex;
-      height: 44px;
-      align-items: center;
-      justify-content: center;
-    }
+  &:hover,
+  &:focus {
+    background-color: $selection;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  .link {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -8,19 +8,19 @@
   &-list + &-list {
     margin-left: 50px;
   }
+}
+.contacts-icon {
+  fill: $primary-text;
+  margin-right: 10px;
+  transition: fill $transition;
 
-  &-icon {
-    fill: $primary-text;
-    margin-right: 10px;
-    transition: fill $transition;
+  .contacts-link:hover > &,
+  .contacts-link:focus > & {
+    color: $selection;
+    fill: $selection;
   }
 }
 
-.contacts-link:hover > .contacts-icon,
-.contacts-link:focus > .contacts-icon {
-  color: $selection;
-  fill: $selection;
-}
 .contacts-link {
   color: $primary-text;
 
