@@ -7,10 +7,11 @@
 @import "./base/variables";
 @import "./base/normalize";
 @import "./base/hidden";
-@import "./header/main";
-@import "./header/logo";
-@import "./header/contacts";
-@import "./header/nav";
+@import "./utils/breakpoints";
+@import "./components/header/main";
+@import "./components/header/logo";
+@import "./components/header/contacts";
+@import "./components/header/nav";
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/button";
@@ -18,11 +19,11 @@
 @import "./components/team";
 @import "./components/works";
 @import "./components/clients";
-@import "./portfolio/cards";
-@import "./portfolio/menu";
-@import "./footer/subscribe";
-@import "./footer/join";
-@import "./footer/address";
+@import "./components/portfolio/cards";
+@import "./components/portfolio/menu";
+@import "./components/footer/subscribe";
+@import "./components/footer/join";
+@import "./components/footer/address";
 
 li {
   list-style-type: none;
