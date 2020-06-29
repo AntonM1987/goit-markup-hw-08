@@ -1,11 +1,11 @@
 .footer-section {
   background: #2f303a;
+
+  @media screen and (min-width: 480px) {
+    width: $mobile;
+  }
 }
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -23,7 +23,7 @@
   }
   .address {
     color: $primary-white;
-    margin-top: 10px;
+
     font-style: normal;
   }
   .footer-link {
@@ -31,7 +31,7 @@
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 10px;
-    display: block;
+
     text-decoration: none;
   }
 }

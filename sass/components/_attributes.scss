@@ -1,47 +1,56 @@
 .attributes {
-  padding-bottom: 0;
+  padding-top: 60px;
 }
 .attr-list {
-  display: flex;
-  padding: 0;
+  display: inline-block;
   margin: 0;
+  padding: 0;
+
   .header {
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      &:last-child {
+      }
+
+      .header {
+        color: $title-text;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+      }
+      .text {
+        @media screen and (min-width: 480px) {
+          margin-top: 10px;
+        }
+        color: $primary-text;
+
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
   }
-  .item {
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0;
-    }
+  .icon-attribute {
+    width: 70px;
+    height: 70px;
+  }
+  .attr-div {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .header {
-      color: $title-text;
-
-      margin-bottom: 0;
-
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.15;
-    }
-    .text {
-      color: $primary-text;
-
-      margin-bottom: 0;
-
-      font-size: 14px;
-      line-height: 1.7;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      margin-bottom: 30px;
     }
   }
-}
-.icon-attribute {
-  width: 70px;
-  height: 70px;
-}
-.attr-div {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

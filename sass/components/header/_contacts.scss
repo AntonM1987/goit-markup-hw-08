@@ -1,17 +1,10 @@
 .contacts {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  display: flex;
-  padding-left: 0;
-
   &-list + &-list {
-    margin-left: 50px;
   }
 }
 .contacts-icon {
   fill: $primary-text;
-  margin-right: 10px;
+
   transition: fill $transition;
 
   .contacts-link:hover > &,
