@@ -1,10 +1,15 @@
 .main-nav {
-  margin-left: 86px;
+  margin-left: 85px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
+  @media screen and (max-width: 1199px) {
+    margin-left: 81px;
+  }
   .link {
     text-decoration: none;
     padding: 32px 0px;
@@ -26,7 +31,7 @@
     letter-spacing: 0.02em;
   }
   .item + .item {
-    margin-left: 40px;
+    margin-left: 50px;
   }
 }
 

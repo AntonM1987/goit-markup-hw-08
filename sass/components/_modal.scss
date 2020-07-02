@@ -16,6 +16,11 @@
 
   width: 528px;
   height: 581px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 .form-content {
   padding: 40px;

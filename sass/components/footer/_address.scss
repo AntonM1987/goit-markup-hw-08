@@ -1,16 +1,30 @@
 .footer-section {
   background: #2f303a;
+  background-position: center;
+  background-size: cover;
+  width: $mobile;
+  margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: $mobile;
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 .footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo-address {
-  margin-right: 69px;
   font-weight: 300;
 
   .footer-logo {
@@ -23,8 +37,11 @@
   }
   .address {
     color: $primary-white;
-
     font-style: normal;
+    @media screen and (min-width: 1200px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
   }
   .footer-link {
     font-size: 14px;

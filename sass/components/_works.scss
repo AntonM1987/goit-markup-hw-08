@@ -1,4 +1,14 @@
+.works {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .work-list {
+  display: flex;
+  padding: 0;
+  margin: 0px;
+
   .header {
     background: rgba(47, 48, 58, 0.8);
     color: $primary-white;
@@ -9,9 +19,12 @@
 
     text-align: center;
     text-transform: uppercase;
+    padding: 27px;
+    margin: 0;
   }
 
   .item {
+    margin-right: 30px;
     position: relative;
     z-index: -1;
 

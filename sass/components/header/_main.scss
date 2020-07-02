@@ -1,6 +1,25 @@
 .head {
   border-bottom: 1px solid #ececec;
+  margin: 0;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+  }
 }
 .menu {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  .is-open {
+    display: block;
+  }
 }
