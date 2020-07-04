@@ -12,11 +12,20 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container head">
+      <div class="head">
         <a class="logo" href="./index.html">
           <span class="logo-web">Web</span>Studio
         </a>
-          <div class="menu">
+        <button class="menu-button" 
+        aria-expanded="false" 
+        aria-controls="menu-container" 
+        data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/svg/menu-btn.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/svg/menu-btn.svg#icon-close"></use>
+          </svg>
+        </button>
+          <div class="container-menu" id="menu-container" data-menu>
             <nav class="nav"></nav>
             <ul class="main-nav">
               <li class="item">
@@ -185,7 +194,12 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list" lang="en">
             <li class="worker">
-              <img class="pic" src="./images/team/john.jpg" alt="John" />
+              <div class="thumb">
+              <img class="pic" srcset="./images/team/WebStudio/john.jpg 1x, 
+              ./images/team/WebStudio/john@2x.jpg 2x, 
+              ./images/team/WebStudio/john@3x.jpg 3x" 
+              src="./images/team/WebStudio/john.jpg" alt="John" />
+              </div>
               <h3 class="header">John Smith</h3>
               <p class="text">Product Designer</p>
               <ul class="social-network">
@@ -236,7 +250,12 @@
               </ul>
             </li>
             <li class="worker">
-              <img class="pic" src="./images/team/marta.jpg" alt="Marta" />
+              <div class="thumb">
+              <img class="pic" srcset="./images/team/WebStudio/marta.jpg 1x, 
+                            ./images/team/WebStudio/marta@2x.jpg 2x, 
+                            ./images/team/WebStudio/marta@3x.jpg 3x" 
+                            src="./images/team/WebStudio/marta.jpg" alt="Marta" />
+              </div>
               <h3 class="header">Marta Stewart</h3>
               <p class="text">Frontend Developer</p>
               <ul class="social-network">
@@ -287,7 +306,12 @@
               </ul>
             </li>
             <li class="worker">
-              <img class="pic" src="./images/team/robert.jpg" alt="Robert" />
+              <div class="thumb">
+              <img class="pic" srcset="./images/team/WebStudio/robert.jpg 1x, 
+                                          ./images/team/WebStudio/robert@2x.jpg 2x, 
+                                          ./images/team/WebStudio/robert@3x.jpg 3x" src="./images/team/WebStudio/robert.jpg"
+                alt="Robert" />
+              </div>
               <h3 class="header">Robert Jakis</h3>
               <p class="text">Marketing</p>
               <ul class="social-network">
@@ -338,7 +362,12 @@
               </ul>
             </li>
             <li class="worker">
-              <img class="pic" src="./images/team/martin.jpg" alt="Martin" />
+              <div class="thumb">
+                <img class="pic" srcset="./images/team/WebStudio/martin.jpg 1x, 
+                                            ./images/team/WebStudio/martin@2x.jpg 2x, 
+                                            ./images/team/WebStudio/marin@3x.jpg 3x" src="./images/team/WebStudio/martin.jpg"
+                  alt="Martin" />
+              </div>
               <h3 class="header">Martin Doe</h3>
               <p class="text">UI Designer</p>
               <ul class="social-network">
@@ -557,6 +586,22 @@
             e.currentTarget.reset();
           });
       })();
+    </script>
+    <script>
+      (() => {
+          const menuBtnRef = document.querySelector("[data-menu-button]");
+          const mobileMenuRef = document.querySelector("[data-menu]");
+
+          menuBtnRef.addEventListener("click", () => {
+            const expanded =
+              menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+            menuBtnRef.classList.toggle("is-open");
+            menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+            mobileMenuRef.classList.toggle("is-open");
+          });
+        })();
     </script>
   </body>
 </html>

@@ -5,19 +5,26 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+
   margin-top: 0;
   margin-bottom: 0;
-  @media screen and (min-width: 1200px) {
-    display: flex;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
   }
   .item {
     margin-right: 15px;
     margin-bottom: 15px;
     @media screen and (min-width: 1200px) {
-      margin-right: 30px;
+      margin-bottom: 0;
     }
     &:last-child {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+      &:nth-of-type(even) {
+        margin-right: 0px;
+      }
     }
   }
 }
@@ -33,6 +40,8 @@
   transition: border-color $transition;
 
   @media screen and (min-width: 1200px) {
+    width: 170px;
+
     display: flex;
     align-items: center;
     justify-content: center;

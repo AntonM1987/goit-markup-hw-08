@@ -6,7 +6,9 @@
   padding: 0;
   &-list {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+      }
     }
   }
   &-list + &-list {
