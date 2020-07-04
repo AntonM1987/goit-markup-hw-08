@@ -39,12 +39,16 @@ body {
   width: $mobile;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
     min-width: $mobile;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
     width: $tablet;
