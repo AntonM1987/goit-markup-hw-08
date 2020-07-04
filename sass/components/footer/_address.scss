@@ -25,10 +25,21 @@
     display: flex;
     align-items: center;
   }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo-address {
   font-weight: 300;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 63px;
   }
@@ -44,7 +55,7 @@
   .address {
     color: $primary-white;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 10px;
 
     @media screen and (min-width: 1200px) {
       margin-top: 20px;
@@ -55,10 +66,9 @@
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
-
+    display: block;
     text-decoration: none;
     @media screen and (min-width: 1200px) {
-      display: block;
     }
   }
 }
