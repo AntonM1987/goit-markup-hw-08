@@ -51,3 +51,9 @@
   height: 24px;
   margin-left: 10px;
 }
+.subscribe-div {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
+}

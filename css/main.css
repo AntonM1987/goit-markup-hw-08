@@ -317,6 +317,8 @@ summary {
   }
   .container-menu.is-open {
     display: block;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -1388,19 +1390,47 @@ summary {
   color: #ffffff;
 }
 
+.pf-filter {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
 .filter-item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-item:nth-child(-n + 5) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-item:last-child {
@@ -1491,6 +1521,18 @@ summary {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.subscribe-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-div {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
