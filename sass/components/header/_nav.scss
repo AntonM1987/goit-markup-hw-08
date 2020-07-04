@@ -1,5 +1,4 @@
 .main-nav {
-  margin-left: 85px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -9,6 +8,9 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 85px;
   }
 
   .link {
@@ -30,9 +32,15 @@
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
   .item + .item {
-    margin-left: 50px;
+    @media screen and (min-width: 768px) {
+      margin-left: 50px;
+    }
   }
 }
 

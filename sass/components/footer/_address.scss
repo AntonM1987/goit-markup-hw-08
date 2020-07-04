@@ -15,7 +15,10 @@
 }
 .footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -26,6 +29,9 @@
 
 .logo-address {
   font-weight: 300;
+  @media screen and (min-width: 1200px) {
+    margin-right: 63px;
+  }
 
   .footer-logo {
     color: $primary-white;
@@ -41,15 +47,18 @@
     margin-top: 20px;
 
     @media screen and (min-width: 1200px) {
-      margin-top: 10px;
+      margin-top: 20px;
     }
   }
   .footer-link {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 10px;
+    margin-top: 9px;
 
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 }

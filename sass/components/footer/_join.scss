@@ -1,4 +1,7 @@
 .joinus {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .social-links {
@@ -6,10 +9,9 @@
   margin-top: 20px;
   margin-bottom: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
   }
 }
 .footer-icon {

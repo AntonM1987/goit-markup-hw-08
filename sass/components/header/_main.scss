@@ -1,5 +1,4 @@
 .head {
-  border-bottom: 1px solid #ececec;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -30,8 +29,6 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    border: none;
-    height: 480px;
     align-items: center;
     padding: 60px 0;
 
@@ -69,4 +66,12 @@
 }
 .menu-button.is-open .icon-cross {
   display: block;
+}
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: $selection;
+}
+.icon-cross:hover,
+.icon-cross:focus {
+  fill: $selection;
 }
