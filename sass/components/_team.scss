@@ -1,16 +1,7 @@
 .team-section {
   background: $background;
-  width: $mobile;
   margin: 0 auto;
-
   padding-top: 60px;
-
-  @media screen and (min-width: 768px) {
-    width: $tablet;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 100%;
-  }
 }
 .team-list {
   display: flex;

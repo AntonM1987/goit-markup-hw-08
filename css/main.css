@@ -986,21 +986,8 @@ summary {
 
 .team-section {
   background: #f5f4fa;
-  width: 480px;
   margin: 0 auto;
   padding-top: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-section {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-section {
-    width: 100%;
-  }
 }
 
 .team-list {
@@ -1739,20 +1726,7 @@ summary {
   background: #2f303a;
   background-position: center;
   background-size: cover;
-  width: 480px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-section {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-section {
-    width: 100%;
-  }
 }
 
 .footer {
