@@ -15,13 +15,13 @@
 }
 .footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     align-items: center;
   }
@@ -31,7 +31,6 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
   }
 }
 
