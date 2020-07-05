@@ -574,14 +574,7 @@ summary {
 
 .hero {
   text-align: center;
-  width: 480px;
   height: 400px;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
 }
 
 .hero-header {
@@ -622,6 +615,7 @@ summary {
   .background {
     width: 100%;
     height: 600px;
+    max-width: 1600px;
   }
 }
 
