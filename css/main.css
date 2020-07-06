@@ -1023,6 +1023,12 @@ summary {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .team-list .worker:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list .worker:nth-of-type(odd) {
     margin-right: 30px;
