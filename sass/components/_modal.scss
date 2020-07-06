@@ -81,10 +81,14 @@
   }
 }
 .checkbox {
-  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.7px;
   color: #757575;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -126,7 +130,7 @@
   transition: $transition;
 }
 
-.comment:focus + .form-textarea {
+.form-comment:focus + .form-textarea {
   color: $selection;
   transform: translateY(-30px);
   left: 16px;

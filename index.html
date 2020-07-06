@@ -16,17 +16,29 @@
         <a class="logo" href="./index.html">
           <span class="logo-web">Web</span>Studio
         </a>
-        <button class="menu-button" 
-        aria-expanded="false" 
-        aria-controls="menu-container" 
-        data-menu-button>
-          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu" href="./images/svg/menu-btn.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/svg/menu-btn.svg#icon-close"></use>
+        <button
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/svg/menu-btn.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/svg/menu-btn.svg#icon-close"
+            ></use>
           </svg>
         </button>
-          <div class="container-menu" id="menu-container" data-menu>
-            <nav class="nav"></nav>
+        <div class="container-menu" id="menu-container" data-menu>
+          <nav class="nav">
             <ul class="main-nav">
               <li class="item">
                 <a href="./index.html" class="link current"> Студия</a>
@@ -36,25 +48,26 @@
               </li>
               <li class="item"><a href="" class="link"> Контакты</a></li>
             </ul>
-            </nav>
-            <ul class="contacts">
-              <li class="contacts-list">
-                <a href="mailto:info@devstudio.com" class="contacts-link">
-                  <svg class="contacts-icon" width="16px" height="11px">
-                    <use href="./images/svg/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts-list">
-                <a href="tel:+380961111111" class="contacts-link"><svg class="contacts-icon" width="10px" height="15px">
-                    <use href="./images/svg/sprite.svg#icon-mobile"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-             </ul>
-          </div>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts-list">
+              <a href="mailto:info@devstudio.com" class="contacts-link">
+                <svg class="contacts-icon" width="16px" height="11px">
+                  <use href="./images/svg/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-list">
+              <a href="tel:+380961111111" class="contacts-link"
+                ><svg class="contacts-icon" width="10px" height="15px">
+                  <use href="./images/svg/sprite.svg#icon-mobile"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -65,52 +78,80 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-                 <div class="backdrop is-hidden" data-backdrop>
-                    <form class="modal-window js-speaker-form">
-                        <div class="form-content">
-                          <h2 class="modal-header">
-                            Оставьте свои данные, мы вам перезвоним
-                           </h2>
-                              <label class="form">
-                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                                <span class="form-label">Имя</span>
-                                <svg class="form-icon">
-                                  <use href="./images/svg/modal.svg#icon-person"></use>
-                                </svg>
-                              </label>
-                              <label class="form">
-                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                                <span class="form-label">Телефон</span>
-                                <svg class="form-icon">
-                                  <use href="./images/svg/modal.svg#icon-phone"></use>
-                                </svg>
-                              </label>
-                              <label class="form">
-                                <input type="text" class="form-input" name="name" placeholder=" " autofocus />
-                                <span class="form-label">Почта</span>
-                                <svg class="form-icon">
-                                  <use href="./images/svg/modal.svg#icon-email"></use>
-                                </svg>
-                              </label>
-                              <div class="form">
-                                <textarea class="form-comment" name="comment" id="comment"></textarea>
-                                <label for="comment" class="form-textarea">Комментарий</label>
-                              </div>
-                              <label class="checkbox">
-                                <input class="checkbox-input" type="checkbox" name="policy" value="css" placeholder=" " />
-                                <span class="checkbox-icon"></span>
-                                Соглашаюсь с рассылкой и принимаю
-                                <a class="checkbox-terms" href="">Условия договора</a>
-                              </label>
-                              <button class="close-button" data-close-modal>
-                                <svg class="close" width="11px" height="11px">
-                       <use href="./images/svg/modal.svg#icon-close"></use>
-                       </svg>
-                       </button>
-                      <button class="button modal">Отправить</button>
+            <div class="backdrop is-hidden" data-backdrop>
+              <form class="modal-window js-speaker-form">
+                <div class="form-content">
+                  <h2 class="modal-header">
+                    Оставьте свои данные, мы вам перезвоним
+                  </h2>
+                  <label class="form">
+                    <input
+                      type="text"
+                      class="form-input"
+                      name="name"
+                      placeholder=" "
+                      autofocus
+                    />
+                    <span class="form-label">Имя</span>
+                    <svg class="form-icon">
+                      <use href="./images/svg/modal.svg#icon-person"></use>
+                    </svg>
+                  </label>
+                  <label class="form">
+                    <input
+                      type="text"
+                      class="form-input"
+                      name="name"
+                      placeholder=" "
+                    />
+                    <span class="form-label">Телефон</span>
+                    <svg class="form-icon">
+                      <use href="./images/svg/modal.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                  <label class="form">
+                    <input
+                      type="text"
+                      class="form-input"
+                      name="name"
+                      placeholder=" "
+                    />
+                    <span class="form-label">Почта</span>
+                    <svg class="form-icon">
+                      <use href="./images/svg/modal.svg#icon-email"></use>
+                    </svg>
+                  </label>
+                  <div class="form">
+                    <textarea
+                      class="form-comment"
+                      name="comment"
+                      id="comment"
+                    ></textarea>
+                    <label for="comment" class="form-textarea"
+                      >Комментарий</label
+                    >
                   </div>
-               </form>
-           </div>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox-input"
+                      type="text"
+                      name="policy"
+                      value="css"
+                      placeholder=" "
+                    />
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-terms" href="">Условия договора</a>
+                  </label>
+                  <button class="close-button" data-close-modal>
+                    <svg class="close" width="11px" height="11px">
+                      <use href="./images/svg/modal.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <button class="button modal">Отправить</button>
+                </div>
+              </form>
+            </div>
             <button class="button" data-open-modal>Заказать услугу</button>
           </div>
         </section>
@@ -195,10 +236,16 @@
           <ul class="team-list" lang="en">
             <li class="worker">
               <div class="thumb">
-              <img class="pic" srcset="./images/team/WebStudio/john.jpg 1x, 
-              ./images/team/WebStudio/john@2x.jpg 2x, 
-              ./images/team/WebStudio/john@3x.jpg 3x" 
-              src="./images/team/WebStudio/john.jpg" alt="John" />
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/team/WebStudio/john.jpg    1x,
+                    ./images/team/WebStudio/john@2x.jpg 2x,
+                    ./images/team/WebStudio/john@3x.jpg 3x
+                  "
+                  src="./images/team/WebStudio/john.jpg"
+                  alt="John"
+                />
               </div>
               <h3 class="header">John Smith</h3>
               <p class="text">Product Designer</p>
@@ -251,10 +298,16 @@
             </li>
             <li class="worker">
               <div class="thumb">
-              <img class="pic" srcset="./images/team/WebStudio/marta.jpg 1x, 
-                            ./images/team/WebStudio/marta@2x.jpg 2x, 
-                            ./images/team/WebStudio/marta@3x.jpg 3x" 
-                            src="./images/team/WebStudio/marta.jpg" alt="Marta" />
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/team/WebStudio/marta.jpg    1x,
+                    ./images/team/WebStudio/marta@2x.jpg 2x,
+                    ./images/team/WebStudio/marta@3x.jpg 3x
+                  "
+                  src="./images/team/WebStudio/marta.jpg"
+                  alt="Marta"
+                />
               </div>
               <h3 class="header">Marta Stewart</h3>
               <p class="text">Frontend Developer</p>
@@ -307,10 +360,16 @@
             </li>
             <li class="worker">
               <div class="thumb">
-              <img class="pic" srcset="./images/team/WebStudio/robert.jpg 1x, 
-                                          ./images/team/WebStudio/robert@2x.jpg 2x, 
-                                          ./images/team/WebStudio/robert@3x.jpg 3x" src="./images/team/WebStudio/robert.jpg"
-                alt="Robert" />
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/team/WebStudio/robert.jpg    1x,
+                    ./images/team/WebStudio/robert@2x.jpg 2x,
+                    ./images/team/WebStudio/robert@3x.jpg 3x
+                  "
+                  src="./images/team/WebStudio/robert.jpg"
+                  alt="Robert"
+                />
               </div>
               <h3 class="header">Robert Jakis</h3>
               <p class="text">Marketing</p>
@@ -363,10 +422,16 @@
             </li>
             <li class="worker">
               <div class="thumb">
-                <img class="pic" srcset="./images/team/WebStudio/martin.jpg 1x, 
-                                            ./images/team/WebStudio/martin@2x.jpg 2x, 
-                                            ./images/team/WebStudio/marin@3x.jpg 3x" src="./images/team/WebStudio/martin.jpg"
-                  alt="Martin" />
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/team/WebStudio/martin.jpg    1x,
+                    ./images/team/WebStudio/martin@2x.jpg 2x,
+                    ./images/team/WebStudio/marin@3x.jpg  3x
+                  "
+                  src="./images/team/WebStudio/martin.jpg"
+                  alt="Martin"
+                />
               </div>
               <h3 class="header">Martin Doe</h3>
               <p class="text">UI Designer</p>
@@ -472,7 +537,6 @@
     </main>
     <footer class="footer-section">
       <div class="container footer">
-        
         <div class="logo-address">
           <a class="footer-logo" href="./index.html">
             <span class="logo-web">Web</span>Studio
@@ -535,23 +599,27 @@
           </ul>
         </div>
         <div class="subscribe-div">
-        <div class="signin">
-          <form action="">
-          <b class="action">Подпишитесь на рассылку</b>
-          <label for="mail"></label>
-          <input type="email" name="mail" id="mail" placeholder="  E-mail" />
+          <div class="signin">
+            <form>
+              <b class="action">Подпишитесь на рассылку</b>
+              <label for="mail"></label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="  E-mail"
+              />
+            </form>
+          </div>
+          <div class="button-div">
+            <button class="button subscribe">
+              Подписаться
+              <svg class="icon-subscribe">
+                <use href="./images/svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="button-div">
-          <button class="button subscribe"
-            >Подписаться
-            <svg class="icon-subscribe">
-              <use href="./images/svg/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-          </a>
-        </div>
-        </div>
-        </form>
       </div>
     </footer>
 
@@ -592,19 +660,19 @@
     </script>
     <script>
       (() => {
-          const menuBtnRef = document.querySelector("[data-menu-button]");
-          const mobileMenuRef = document.querySelector("[data-menu]");
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
 
-          menuBtnRef.addEventListener("click", () => {
-            const expanded =
-              menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-            menuBtnRef.classList.toggle("is-open");
-            menuBtnRef.setAttribute("aria-expanded", !expanded);
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-            mobileMenuRef.classList.toggle("is-open");
-          });
-        })();
+          mobileMenuRef.classList.toggle("is-open");
+        });
+      })();
     </script>
   </body>
 </html>
